@@ -1,0 +1,1 @@
+class SaperField{constructor(e,s){this.conditions=["uncovered","suspected","discovered"],this.condition=["uncovered"],this.hasMine=e,this.mineCounter=s}discover(){return!this.hasMine&&this.mineCounter}suspect(){this.condition="suspected"}}
