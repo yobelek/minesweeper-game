@@ -1,6 +1,15 @@
 @import "shared/variables";
+@import "shared/functions";
 @import "shared/mixins";
+@import "shared/layout";
 @import "shared/global";
+@import "shared/form";
+
 @import "header/header";
-@import "content/game";
+
+@import "content/main-content";
+@import "content/description";
+@import "content/gamePlay";
+@import "content/score";
+
 @import "footer/footer";

@@ -1,0 +1,93 @@
+.game-play {
+
+  &__setting{
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+
+    &-label {
+      text-transform: uppercase;
+    }
+
+    &-value {
+      display: block;
+      font-size: 1.6rem;
+      line-height: 1.3;
+    }
+
+    &-field {
+    }
+
+    &-description {
+
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  &__board {
+    margin: 3rem auto 0;
+    width: 200px;
+    text-align: center;
+    user-select: none;
+
+    &-header{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      background: $backgorund-header;
+      color: $color-secondary;
+      font-size: 2rem;
+      line-height: 1.5;
+
+      > * {
+        min-width: 50px;
+        padding: 0 12.5px;
+      }
+    }
+
+    &-content {
+      display: flex;
+      flex-flow: wrap column;
+      align-content: center;
+      background: $bacground-secondary;
+      height: 200px;
+    }
+
+    &-field {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 25px;
+      height: 25px;
+      background: #e3ddd8;
+      border: 1px solid #333;
+      font: 700 1.4rem/1 $font-primary;
+      color: $violet;
+      cursor: pointer;
+      transition: all 0.25s linear;
+
+      &:hover,
+      &[data-discovered="true"] {
+        background: darken(#e3ddd8, 8%);
+      }
+      &[data-has-mine="true"] {
+        color: red;
+      }
+    }
+
+    &-footer {
+      font-size: 2rem;
+      line-height: 1.5;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: red;
+      background-color: $background-footer;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.header{
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparentize($backgorund-header, 0.3) ;
+
+  &__container{
+
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: $header-height;
+
+    &-text {
+      margin: 0;
+      padding: 0;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+  }
+}

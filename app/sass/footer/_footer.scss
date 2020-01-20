@@ -1,0 +1,25 @@
+.footer{
+  background: $background-footer;
+  color: $color-footer;
+  padding: 0.7rem 0;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  &__copyrights{
+    font-weight: 700;
+  }
+
+  &__author{
+    text-align: right;
+
+    &-link {
+      color: inherit;
+
+      &:hover {
+        font-weight: 700;
+        color: inherit;
+      }
+    }
+  }
+}

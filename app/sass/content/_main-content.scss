@@ -1,0 +1,30 @@
+.main-content {
+  box-sizing: border-box;
+  padding-top: $header-height;
+  min-height: calc(100vh - 2.4rem );
+
+  &__container {
+
+  }
+}
+
+.section{
+  width: 100%;
+  margin: 3rem 0;
+
+  &__title{
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.section-game-history {
+
+  &__list {
+
+  }
+
+  &__item {
+
+  }
+}

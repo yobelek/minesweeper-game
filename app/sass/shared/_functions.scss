@@ -1,0 +1,7 @@
+@function selectors($selector, $from:1, $to:12) {
+  @if $from == $to {
+    @return '#{$selector}#{$from}';
+  } @else {
+    @return '#{$selector}#{$from},' + selectors($selector, $from+1, $to);
+  }
+}

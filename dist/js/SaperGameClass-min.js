@@ -1,1 +1,0 @@
-class SaperGame{constructor(s,i,e){this.sizeX=s,this.sizeY=i,this.mines=e}}

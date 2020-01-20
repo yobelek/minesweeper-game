@@ -1,0 +1,28 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  &-group{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+
+  &__field {
+
+    &-value {
+      color: $color-third;
+    }
+
+    &-label {
+      font-weight: 700;
+    }
+
+    &-description {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: $color-third;
+    }
+  }
+}

@@ -1,9 +1,44 @@
-html, body{
-	maring: 0;
-	font: 400 12px/15px 'Lato';
+html, body {
+	margin: 0;
+	padding: 0;
+	font: 400 14px/15px $font-primary;
+	color: $color-primary;
 }
 
-.container{
-	padding-right: 15px;
-	padding-left: 15px;
+body {
+	background: $backgorund-primary;
+}
+
+a {
+	color: $color-primary;
+	text-decoration: none;
+	transition: all .25s linear;
+
+	&:hover {
+		color: $color-secondary;
+	}
+}
+
+@for $i from 1 through 5 {
+	h#{$i} {
+		font-size: 3rem - ($i - 1) * 0.3rem;
+	}
+}
+
+#{selectors(h, 1, 5)} {
+	line-height: 1;
+	color: $color-secondary;
+	margin: 0 0 0.7em;
+}
+
+div {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0 0 1.5em;
+}
+
+ul, ol {
+	margin: 0 0 1em;
 }

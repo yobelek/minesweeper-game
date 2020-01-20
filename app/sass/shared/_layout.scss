@@ -1,0 +1,56 @@
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+#{selectors('.col-', 1, 12)},
+#{selectors('.col-sm-', 1, 12)},
+#{selectors('.col-md-', 1, 12)},
+#{selectors('.col-lg-', 1, 12)},
+#{selectors('.col-xl-', 1, 12)}{
+  padding-left: 15px;
+  padding-right: 15px;
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+@include columns();
+
+@media all and (min-width: $sm-min) {
+  .container {
+    width: 540px;
+  }
+  @include columns(col-sm);
+}
+
+@media all and (min-width: $md-min) {
+  .container {
+    width: 720px;
+  }
+  @include columns(col-md);
+}
+
+@media all and (min-width: $lg-min) {
+  .container {
+    width: 992px;
+  }
+  @include columns(col-lg);
+}
+
+@media all and (min-width: $xl-min) {
+  .container {
+    width: 1140px;
+  }
+  @include columns(col-xl);
+}

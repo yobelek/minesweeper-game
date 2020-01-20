@@ -1,9 +1,29 @@
-// Colors
-$color-primary: #ccc;
-$color-secondary: #123;
+// Colors and backgrounds
+$violet: #928EFE;
+$green: #BBE681;
+$pink: #FD9F9B;
+$blue: #72D6E8;
+$yellow: #FEE68E;
+$gray: #e3ddd8;
 
-$backgorund-primary: complement($color-primary);
+$color-primary: $yellow;
+$color-secondary: $green;
+$color-third: $gray;
+$color-footer: $violet;
 
+$backgorund-primary: $pink;
+$bacground-secondary: $gray;
+$backgorund-header: $violet;
+$background-footer: $green;
 
 // Fonts
 $font-primary: 'Lato', sans-serif;
+
+// Breakpoints
+$sm-min: 576px;
+$md-min: 768px;
+$lg-min: 992px;
+$xl-min: 1200px;
+
+// Header
+$header-height: 60px;
